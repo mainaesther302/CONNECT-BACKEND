@@ -1,0 +1,7 @@
+CREATE PROCEDURE CreateQuestion 
+    @PollID INT,
+    @Text NVARCHAR(MAX)
+AS
+BEGIN
+    INSERT INTO Questions (PollID, Text) VALUES (@PollID, @Text);
+END;

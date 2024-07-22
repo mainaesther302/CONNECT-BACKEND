@@ -1,0 +1,7 @@
+CREATE TABLE Options (
+    OptionID INT IDENTITY(1,1) PRIMARY KEY,
+    QuestionID INT,
+    Text NVARCHAR(MAX),
+    Votes INT DEFAULT 0,
+    CONSTRAINT FK_QuestionOption FOREIGN KEY (QuestionID) REFERENCES Questions(QuestionID)
+);

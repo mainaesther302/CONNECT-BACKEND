@@ -1,0 +1,6 @@
+CREATE OR ALTER PROCEDURE deleteUser(@UserId VARCHAR(255))
+AS
+BEGIN
+    DELETE FROM UsersTable
+    WHERE UserId = @UserId;
+END;

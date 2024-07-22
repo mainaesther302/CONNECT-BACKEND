@@ -1,0 +1,13 @@
+####
+POST: http://localhost/4000/view
+content-type :application/json
+
+{
+
+    "Image":"https://images.unsplash.com/photo-1675521005096-729123cd1dc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHJ1ZyUyMGFidXNlfGVufDB8fDB8fHww ",
+    "Description":"We know what can and needs to be done to help reduce the burden of psychoactive substance use."
+}
+
+###########
+GET : http://localhost:4000/view/allviews
+

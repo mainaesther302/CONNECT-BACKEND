@@ -1,0 +1,6 @@
+CREATE OR ALTER PROCEDURE getAllIncidents
+
+AS
+BEGIN
+    SELECT * FROM IncidentTables
+END;

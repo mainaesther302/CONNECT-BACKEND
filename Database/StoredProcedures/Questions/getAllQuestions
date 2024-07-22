@@ -1,0 +1,6 @@
+CREATE PROCEDURE GetQuestionsByPollID 
+    @PollID INT
+AS
+BEGIN
+    SELECT * FROM Questions WHERE PollID = @PollID;
+END;

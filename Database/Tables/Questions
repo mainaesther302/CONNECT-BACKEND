@@ -1,0 +1,6 @@
+CREATE TABLE Questions (
+    QuestionID INT IDENTITY(1,1) PRIMARY KEY,
+    PollID INT,
+    Text NVARCHAR(MAX),
+    CONSTRAINT FK_PollQuestion FOREIGN KEY (PollID) REFERENCES Polls(PollID)
+);

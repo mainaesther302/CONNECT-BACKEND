@@ -1,0 +1,6 @@
+CREATE PROCEDURE GetOptionsByQuestionID 
+    @QuestionID INT
+AS
+BEGIN
+    SELECT * FROM Options WHERE QuestionID = @QuestionID;
+END;

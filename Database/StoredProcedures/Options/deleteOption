@@ -1,0 +1,6 @@
+CREATE PROCEDURE DeleteOption 
+    @OptionID INT
+AS
+BEGIN
+    DELETE FROM Options WHERE OptionID = @OptionID;
+END;

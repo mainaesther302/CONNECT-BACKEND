@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const views_1 = require("../Controllers/views");
+const MiddleWare_1 = require("../MiddleWare");
+const viewRoutes = (0, express_1.Router)();
+viewRoutes.post("", MiddleWare_1.authorize, views_1.AddView);
+viewRoutes.get("/allviews", views_1.GetViews);
+viewRoutes.get(":/ViewId", views_1.GetView);
+viewRoutes.delete("/:ViewId", views_1.DeleteView);
+viewRoutes.put("/:ViewId", views_1.UpdateView);
+exports.default = viewRoutes;

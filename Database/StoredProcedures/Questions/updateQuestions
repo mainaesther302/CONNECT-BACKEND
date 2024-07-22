@@ -1,0 +1,7 @@
+CREATE PROCEDURE UpdateQuestion 
+    @QuestionID INT,
+    @Text NVARCHAR(MAX)
+AS
+BEGIN
+    UPDATE Questions SET Text = @Text WHERE QuestionID = @QuestionID;
+END;

@@ -1,0 +1,7 @@
+CREATE PROCEDURE CreateOption 
+    @QuestionID INT,
+    @Text NVARCHAR(MAX)
+AS
+BEGIN
+    INSERT INTO Options (QuestionID, Text) VALUES (@QuestionID, @Text);
+END;
